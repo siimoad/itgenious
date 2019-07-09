@@ -45,7 +45,7 @@ body a{
 			margin: 5px 20px 5px 20px ;
 		}
 .item_add {
-  color: #000;
+  color: #fff;
  
   border:none;
 }	
@@ -277,7 +277,7 @@ a.item_add1 {
 a.item_add1:hover{
 	background:rgb(3, 193, 167);
 	text-decoration:none;
-	color:#000;
+	color:#fff;
 }
 .btn_5{
 	padding:25px 40px;
@@ -384,7 +384,8 @@ ul.qty li p{
   border: none;
   text-align: center;
 }
-
+.item_add:hover{
+}	
 .grid_1 img{
 	margin-bottom:1em;
 }
@@ -433,7 +434,7 @@ select.item_Size {
 .item_add  a{
   background: rgb(9, 209, 182);
   border: none;
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
   font-size: 0.85em;
   border: none;
@@ -575,6 +576,7 @@ input:focus {
 .header_right {
   float: right;
   width: 40%;
+  padding-top: 5%;
 }
 .head-t {
   padding: 1em 0;
@@ -894,16 +896,16 @@ ul.megamenu.skyblue {
 .arriv h3 {
   font-size: 1.5em;
   font-weight: 500;
-  color: #000;
+  color: #f9f9f9;
   margin: 0 0 0.5em;
   font-family: 'Playfair Display', serif;
 }
 .arriv p {
-    color: #000;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.8em;
-    margin: 0.5em 0;
+  color: #ededed;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.8em;
+  margin: 0.5em 0;
 }
 .crt-btn a {
   text-transform: capitalize;
