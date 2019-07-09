@@ -18,7 +18,6 @@
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css" rel="stylesheet">
         <!-- Gretong CSS -->
-        <link type="text/css" href="{{ asset('css') }}/app.css" rel="stylesheet">
 
                 <link type="text/css" href="{{ asset('gretong') }}/css/style.css" rel="stylesheet">
                 <link type="text/css" href="{{ asset('gretong') }}/css/bootstrap.css" rel="stylesheet">
