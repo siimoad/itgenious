@@ -5266,8 +5266,8 @@ input[type='button'].btn-block
     display: inline-block;
 
     margin-right: 1rem;
-    padding-top: .0625rem;
-    padding-bottom: .0625rem;
+    padding-top: .0250rem;
+    padding-bottom: .0250rem;
 
     white-space: nowrap;
 }
