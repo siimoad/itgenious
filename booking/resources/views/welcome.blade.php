@@ -24,7 +24,7 @@
 				<img src="{{ asset('gretong') }}/images/Microsoft-Certification-Logo.png" class="img-responsive" alt="">
 				<div class="arriv-info">
 					<div class="crt-btn">
-						<a href="details.html">TAKE A LOOK</a>
+						<a href="{{ route('details') }}">TAKE A LOOK</a>
 					</div>
 				</div>
 			</div>
@@ -32,48 +32,52 @@
 			<img src="{{ asset('gretong') }}/images/htmljscss.png" class="img-responsive" alt="">
 			<div class="arriv-info">
 					<div class="crt-btn">
-						<a href="details.html">TAKE A LOOK</a>
+						<a href="{{ route('details') }}">TAKE A LOOK</a>
 					</div>
-			</div>
+				</div>
 			<div class="clearfix"> </div>
 		</div>
 		<div class="row arriv-bottm h-100">
 			<div class="col-md-8 arriv-left1">
-				<img src="{{ asset('gretong') }}/images/oracle1.png" class="img-responsive" alt="">
-				<div class="arriv-info1">
-					<div class="crt-btn">
-						<a href="details.html">SHOP NOW</a>
+				<img src="{{ asset('gretong') }}/images/oracle.png" class="img-responsive" alt="">
+				<div class="arriv-info">
+						<div class="crt-btn">
+							<a href="{{ route('details') }}">TAKE A LOOK</a>
+						</div>
 					</div>
-				</div>
 			</div>
 			<div class="col-md-4 arriv-right1">
 				<img src="{{ asset('gretong') }}/images/linux.png" class="img-responsive" alt="">
-
-				<div class="arriv-info2">
-					<a href="details.html"><h3>Trekking Shoes<i class="ars"></i></h3></a>
-				</div>
-			</div>
+				<div class="arriv-info">
+						<div class="crt-btn">
+							<a href="{{ route('details') }}">TAKE A LOOK</a>
+						</div>
+					</div>
 			<div class="clearfix"> </div>
 		</div>
 		<div class="row arriv-las">
 			<div class="col-md-4 arriv-left2">
 				<img src="{{ asset('gretong') }}/images/fortinet-inner.png" class="img-responsive" alt="">
-				<div class="arriv-info2">
-					<a href="details.html"><h3>Casual Glasses<i class="ars"></i></h3></a>
+				<div class="arriv-info">
+						<div class="crt-btn">
+							<a href="{{ route('details') }}">TAKE A LOOK</a>
+						</div>
 				</div>
 			</div>
 			<div class="col-md-4 arriv-middle">
 				<img src="{{ asset('gretong') }}/images/java.png" class="img-responsive" alt="">
-				<div class="arriv-info3">
-					<div class="crt-btn">
-						<a href="details.html">SHOP NOW</a>
-					</div>
+				<div class="arriv-info">
+						<div class="crt-btn">
+							<a href="{{ route('details') }}">TAKE A LOOK</a>
+						</div>
 				</div>
 			</div>
 			<div class="col-md-4 arriv-right2">
 				<img src="{{ asset('gretong') }}/images/cisco.png" class="img-responsive"  alt="">
-				<div class="arriv-info2">
-					<a href="details.html"><h3>Elegant Watches<i class="ars"></i></h3></a>
+				<div class="arriv-info">
+						<div class="crt-btn">
+							<a href="{{ route('details') }}">TAKE A LOOK</a>
+						</div>
 				</div>
 			</div>
 				
