@@ -20,7 +20,6 @@
         <!-- Gretong CSS -->
 
                 <link type="text/css" href="{{ asset('gretong') }}/css/style.css" rel="stylesheet">
-                <link type="text/css" href="{{ asset('gretong') }}/css/bootstrap.css" rel="stylesheet">
 
         <link type="text/css" href="{{ asset('gretong') }}/css/etalage.css" rel="stylesheet">
         <link type="text/css" href="{{ asset('gretong') }}/css/megamenu.css" rel="stylesheet">

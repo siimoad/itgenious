@@ -5,13 +5,14 @@
 	<div class="header">
 		<ul class="megamenu skyblue">
 			<li class="active grid"><a class="color1" href="index.html">Home</a></li>
-			<li class="grid"><a class="color2" href="#">new arrivals</a></li>
-			<li><a class="color4" href="#">TUXEDO</a></li>
-			<li><a class="color5" href="#">SWEATER</a></li>
-			<li><a class="color6" href="#">SHOES</a></li>			
-			<li><a class="color7" href="#">GLASSES</a></li>
-			<li><a class="color8" href="#">T-SHIRT</a></li>
-			<li><a class="color9" href="#">WATCHES</a></li>
+			<li class="grid"><a class="color2" href="#">MICROSOFT</a></li>
+			<li><a class="color4" href="#">CISCO</a></li>
+			<li><a class="color5" href="#">VMWARE</a></li>
+			<li><a class="color6" href="#">SNIA</a></li>			
+			<li><a class="color7" href="#">ORACLE</a></li>
+			<li><a class="color8" href="#">LINUX</a></li>
+			<li><a class="color9" href="#">JAVA</a></li>
+			<li><a class="color9" href="#">FORTINET</a></li>
          </ul> 
     </div>
 </div>
@@ -19,31 +20,61 @@
 	<div class="container">
 		<div class="arriv-top">	
 			<div class="col-md-6 arriv-left">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/Microsoft-Certification-Logo.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/Microsoft-Certification-Logo.png" class="img-responsive" alt="">
+				<div class="arriv-info">
+					<div class="crt-btn">
+						<a href="details.html">TAKE A LOOK</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-6 arriv-right">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/htmljscss.png" class="img-responsive" alt=""></a>
+			<img src="{{ asset('gretong') }}/images/htmljscss.png" class="img-responsive" alt="">
+			<div class="arriv-info">
+					<div class="crt-btn">
+						<a href="details.html">TAKE A LOOK</a>
+					</div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 		<div class="arriv-bottm">
 			<div class="col-md-8 arriv-left1">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/oracle.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/oracle.png" class="img-responsive" alt="">
+				<div class="arriv-info1">
+					<div class="crt-btn">
+						<a href="details.html">SHOP NOW</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4 arriv-right1">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/linux.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/linux.png" class="img-responsive" alt="">
+
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Trekking Shoes<i class="ars"></i></h3></a>
+				</div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 		<div class="arriv-las">
 			<div class="col-md-4 arriv-left2">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/fortinet-inner.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/fortinet-inner.png" class="img-responsive" alt="">
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Casual Glasses<i class="ars"></i></h3></a>
+				</div>
 			</div>
 			<div class="col-md-4 arriv-middle">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/java.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/java.png" class="img-responsive" alt="">
+				<div class="arriv-info3">
+					<div class="crt-btn">
+						<a href="details.html">SHOP NOW</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4 arriv-right2">
-				<a href="details.html"><img src="{{ asset('gretong') }}/images/cisco.png" class="img-responsive" alt=""></a>
+				<img src="{{ asset('gretong') }}/images/cisco.png" class="img-responsive"  alt="">
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Elegant Watches<i class="ars"></i></h3></a>
+				</div>
+			</div>
 				
 			</div>
 			<div class="clearfix"> </div>
