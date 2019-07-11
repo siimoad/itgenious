@@ -11,7 +11,9 @@
 					<div class="login" >
 						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
 						    <div id="loginBox">                
-						        <form role="form" method="POST" action="{{ route('login') }}" id="loginForm">
+								<form role="form" method="POST" action="{{ route('login') }}" id="loginForm">
+									                            @csrf
+
 						                <fieldset id="body">
 						                	<fieldset>
 												<label for="email">Email Address</label>

@@ -16,9 +16,10 @@
          </ul> 
     </div>
 </div>
+	<div class="container">
 <div class="arriv">
 	<div class="container">
-		<div class="arriv-top">	
+		<div class="row arriv-top">	
 			<div class="col-md-6 arriv-left">
 				<img src="{{ asset('gretong') }}/images/Microsoft-Certification-Logo.png" class="img-responsive" alt="">
 				<div class="arriv-info">
@@ -36,9 +37,9 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-		<div class="arriv-bottm">
+		<div class="row arriv-bottm h-100">
 			<div class="col-md-8 arriv-left1">
-				<img src="{{ asset('gretong') }}/images/oracle.png" class="img-responsive" alt="">
+				<img src="{{ asset('gretong') }}/images/oracle1.png" class="img-responsive" alt="">
 				<div class="arriv-info1">
 					<div class="crt-btn">
 						<a href="details.html">SHOP NOW</a>
@@ -54,7 +55,7 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-		<div class="arriv-las">
+		<div class="row arriv-las">
 			<div class="col-md-4 arriv-left2">
 				<img src="{{ asset('gretong') }}/images/fortinet-inner.png" class="img-responsive" alt="">
 				<div class="arriv-info2">
