@@ -22,7 +22,7 @@
 		<div class="row arriv-top">	
 			<div class="col-md-6 arriv-left">
 				<img src="{{ asset('gretong') }}/images/Microsoft-Certification-Logo.png" class="img-responsive" alt="">
-				<div class="arriv-info">
+				<div class="arriv-info text-center ">
 					<div class="crt-btn">
 						<a href="{{ route('details') }}">TAKE A LOOK</a>
 					</div>
@@ -31,13 +31,13 @@
 			<div class="col-md-6 arriv-right">
 			<img src="{{ asset('gretong') }}/images/htmljscss.png" class="img-responsive" alt="">
 			<div class="arriv-info">
-					<div class="crt-btn">
+					<div class=" crt-btn">
 						<a href="{{ route('details') }}">TAKE A LOOK</a>
 					</div>
 				</div>
 			<div class="clearfix"> </div>
 		</div>
-		<div class="row arriv-bottm h-100">
+		<div class="row arriv-bottm ">
 			<div class="col-md-8 arriv-left1">
 				<img src="{{ asset('gretong') }}/images/oracle.png" class="img-responsive" alt="">
 				<div class="arriv-info">

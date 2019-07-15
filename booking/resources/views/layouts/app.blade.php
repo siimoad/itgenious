@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <!-- Icons -->
         <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css" rel="stylesheet">
@@ -51,12 +52,10 @@
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
         <!-- Gretong JS -->
-        <script src="{{ asset('gretong') }}/js/jquery-1.11.1.min.js"></script>
-        <script src="{{ asset('gretong') }}/js/jquery-ui.min.js"></script>
-        <script src="{{ asset('gretong') }}/js/jquery.etalage.min.js"></script>
-        <script src="{{ asset('gretong') }}/js/jquery.jscrollpane.min.js"></script>
         <script src="{{ asset('gretong') }}/js/megamenu.js"></script>
         <script src="{{ asset('gretong') }}/js/menu_jquery.js"></script>
         <script src="{{ asset('gretong') }}/js/simpleChart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
     </body>
 </html>

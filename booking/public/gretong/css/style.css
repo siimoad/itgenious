@@ -869,8 +869,8 @@ ul.megamenu.skyblue {
 }
 .arriv-info {
   position: absolute;
-  top: 216px;
-  left: 119px;
+  top: 80%;
+  left: 40%;
   text-align: center;
 }
 .arriv-right {
@@ -915,7 +915,7 @@ ul.megamenu.skyblue {
   font-weight: 300;
   color: #f9f9f9;
   border: 1px solid #f9f9f9;
-  background: none;
+  background-color: #888888;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
