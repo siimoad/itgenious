@@ -3,9 +3,9 @@
 @section('content')
     @include('layouts.headers.guest')
 
-    <div class="container mt--8 pb-5">
+    <div class="">
         <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-7">
+            <div class="">
                 <div class="card shadow border-0">
                     <div class="card-header bg-transparent pb-5">
                         <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Sign in with') }}</small></div>
