@@ -57,5 +57,6 @@
         <script src="{{ asset('gretong') }}/js/megamenu.js"></script>
         <script src="{{ asset('gretong') }}/js/menu_jquery.js"></script>
         <script src="{{ asset('gretong') }}/js/simpleChart.min.js"></script>
+        <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
     </body>
 </html>
