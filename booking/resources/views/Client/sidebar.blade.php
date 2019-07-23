@@ -5,8 +5,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="http://itgenious.test/home">
-            <img src="http://itgenious.test/argon/img/brand/itlogo.jpg" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand pt-0" href="{{route('home')}}">
+            <img src="{{ asset('argon') }}/img/brand/itlogo.jpg" class="navbar-brand-img" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -14,7 +14,7 @@
                 <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media align-items-center">
                         <span class="avatar avatar-sm rounded-circle">
-                        <img alt="Image placeholder" src="http://itgenious.test/argon/img/theme/team-1-800x800.jpg">
+                        <img alt="Image placeholder" src="{{ asset('argon') }}/img/theme/team-1-800x800.jpg">
                         </span>
                     </div>
                 </a>
@@ -22,7 +22,7 @@
                     <div class=" dropdown-header noti-title">
                         <h6 class="text-overflow m-0">Welcome!</h6>
                     </div>
-                    <a href="http://itgenious.test/profile" class="dropdown-item">
+                    <a href="{{route('profile.edit')}}" class="dropdown-item">
                         <i class="ni ni-single-02"></i>
                         <span>My profile</span>
                     </a>
@@ -39,7 +39,7 @@
                         <span>Support</span>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a href="http://itgenious.test/logout" class="dropdown-item" onclick="event.preventDefault();
+                    <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                         <i class="ni ni-user-run"></i>
                         <span>Logout</span>
@@ -53,8 +53,8 @@
             <div class="navbar-collapse-header d-md-none">
                 <div class="row">
                     <div class="col-6 collapse-brand">
-                        <a href="http://itgenious.test/home">
-                            <img src="http://itgenious.test/argon/img/brand/blue.png">
+                        <a href="{{route('home')}}">
+                            <img src="{{ asset('argon') }}/img/brand/blue.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close">
@@ -79,7 +79,7 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://itgenious.test/home">
+                    <a class="nav-link" href="{{route('home')}}">
                         <i class="ni ni-tv-2 text-primary"></i> Dashboard
                     </a>
                 </li>
@@ -92,12 +92,12 @@
                     <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="http://itgenious.test/profile">
+                                <a class="nav-link" href="{{route('profile.edit')}}">
                                     User profile
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="http://itgenious.test/user">
+                                <a class="nav-link" href="{{route('user.index')}}">
                                     User Management
                                 </a>
                             </li>
