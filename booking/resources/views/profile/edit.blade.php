@@ -1,7 +1,7 @@
 @extends('layouts.app', ['title' => __('User Profile')])
 
 @section('content')
-    @include('users.partials.header', [
+    @include('Client.header', [
         'title' => __('Hello') . ' '. auth()->user()->name,
         'description' => __('This is your profile page. You can see the progress you\'ve made with your work and manage your projects or assigned tasks'),
         'class' => 'col-lg-7'
@@ -21,10 +21,7 @@
                         </div>
                     </div>
                     <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="btn btn-sm btn-info mr-4">{{ __('Connect') }}</a>
-                            <a href="#" class="btn btn-sm btn-default float-right">{{ __('Message') }}</a>
-                        </div>
+                        
                     </div>
                     <div class="card-body pt-0 pt-md-4">
                         <div class="row">
@@ -167,6 +164,6 @@
             </div>
         </div>
         
-        @include('layouts.footers.auth')
+        @include('Guest.footer')
     </div>
 @endsection

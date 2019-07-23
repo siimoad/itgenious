@@ -1,7 +1,7 @@
 @extends('layouts.app', ['class' => 'bg-white'])
 
 @section('content')
-    @include('layouts.headers.guest')
+    @include('Guest.header')
 
     <div class="">
         <div class="row justify-content-center">

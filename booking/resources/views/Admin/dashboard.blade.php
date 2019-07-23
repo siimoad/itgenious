@@ -1,8 +1,8 @@
-@extends('layouts.appp')
+@extends('layouts.app')
 
 @section('content')
-    @include('layouts.headers.cards')
-<div class="container-fluid mt--7">
+    @include('Admin.header')
+    <div class="container-fluid mt--7">
         <div class="row">
             <div class="col-xl-8 mb-5 mb-xl-0">
                 <div class="card bg-gradient-default shadow">

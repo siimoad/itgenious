@@ -12,8 +12,9 @@
                         <span class="avatar avatar-sm rounded-circle">
                             <img alt="Image placeholder" src="http://itgenious.test/argon/img/theme/team-4-800x800.jpg">
                         </span>
+
                         <div class="media-body ml-2 d-none d-lg-block">
-                            <span class="mb-0 text-sm  font-weight-bold">Moad KHIDER</span>
+                            <span class="mb-0 text-sm text-default font-weight-bold">Moad KHIDER</span>
                         </div>
                     </div>
                 </a>

@@ -1,20 +1,21 @@
-@extends('layouts.appp', ['class' => 'bg-primary'])
+@extends('layouts.app', ['class' => 'bg-primary'])
 
 @section('content')
-    @include('layouts.headers.guest')
+    @include('Guest.header')
 
     <div class="container">
         <!-- Table -->
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
+            <div class="col-lg-10 col-md-10">
                 <div class="card bg-primary shadow border-0">
 
                     <div class="card-body px-lg-5 py-lg-5">
 
                         <form role="form" method="POST" action="{{ route('register') }}">
                             @csrf
+  <div class="row">
 
-                            <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
+                            <div class="col form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
@@ -27,7 +28,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class=" form-group{{ $errors->has('sexe') ? ' has-danger' : '' }}">
+                            <div class="col  form-group{{ $errors->has('sexe') ? ' has-danger' : '' }}">
                                 <div class="mx-7">
                                     <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="homme" name="sexe" class="custom-control-input" value="homme">
@@ -44,7 +45,10 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('date_naissance') ? ' has-danger' : '' }}">
+  </div>
+    <div class="row">
+
+                            <div class="col form-group{{ $errors->has('date_naissance') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
@@ -57,7 +61,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('ville') ? ' has-danger' : '' }}">
+                            <div class="col form-group{{ $errors->has('ville') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
@@ -114,7 +118,10 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('etablissement') ? ' has-danger' : '' }}">
+    </div>
+      <div class="row">
+
+                            <div class="col form-group{{ $errors->has('etablissement') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
@@ -154,7 +161,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('niveau') ? ' has-danger' : '' }}">
+                            <div class="col form-group{{ $errors->has('niveau') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
@@ -177,7 +184,10 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('tel') ? ' has-danger' : '' }}">
+      </div>
+        <div class="row">
+
+                            <div class="col form-group{{ $errors->has('tel') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
@@ -190,7 +200,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                            <div class="col form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
@@ -203,7 +213,9 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
+        </div>
+          <div class="row">
+                            <div class="col form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
@@ -216,7 +228,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <div class="form-group">
+                            <div class="col form-group">
                                 <div class="input-group input-group-alternative">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
@@ -224,10 +236,12 @@
                                     <input class="form-control" placeholder="{{ __('Confirm Password') }}" type="password" name="password_confirmation" required>
                                 </div>
                             </div>
-                            <div class="text-muted font-italic">
+          </div>
+            <div class="row">
+                            <div class="col text-muted font-italic">
                                 <small>{{ __('password strength') }}: <span class="text-success font-weight-700">{{ __('strong') }}strong</span></small>
                             </div>
-                            <div class="row my-4">
+                            <div class="col  ">
                                 <div class="col-12">
                                     <div class="custom-control custom-control-alternative custom-checkbox">
                                         <input class="custom-control-input" id="customCheckRegister" type="checkbox">
@@ -237,6 +251,7 @@
                                     </div>
                                 </div>
                             </div>
+            </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary mt-4">{{ __('Create account') }}</button>
                             </div>

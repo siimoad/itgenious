@@ -32,7 +32,7 @@
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
-            @include('layouts.navbars.sidebar')
+            @include('Admin.sidebar')
         @endauth
         
         <div class="main-content">
@@ -41,7 +41,6 @@
         </div>
 
         @guest()
-            @include('layouts.footers.guest')
         @endguest
 
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>

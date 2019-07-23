@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('ville');
             $table->string('etablissement');
             $table->string('niveau');
+            $table->string('privilege')->default(0);
             $table->string('email')->unique();
             $table->string('tel')->unique();
             $table->timestamp('email_verified_at')->nullable();

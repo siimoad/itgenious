@@ -1,7 +1,7 @@
-@extends('layouts.appp', ['class' => 'bg-primary'])
+@extends('layouts.app', ['class' => 'bg-primary'])
 
 @section('content')
-    @include('layouts.headers.guest')
+    @include('Guest.header')
         
             
 <div class="container ">

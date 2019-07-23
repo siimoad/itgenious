@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 class HomeController extends Controller
 {
     /**
@@ -21,6 +22,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        if (Auth::user()->privilege == 0){
+            return view('Client/dashboard');
+        }
+        else
+        return view('Admin/dashboard');
     }
 }
