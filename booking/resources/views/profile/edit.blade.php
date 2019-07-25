@@ -86,17 +86,146 @@
                             @endif
 
                             <div class="pl-lg-4">
-                                <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-name">{{ __('Name') }}</label>
-                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ old('name', auth()->user()->name) }}" required autofocus>
+                                <div class="row">
+                                    <div class="col form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-name">{{ __('Name') }}</label>
+                                        <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ old('name', auth()->user()->name) }}" required autofocus>
 
-                                    @if ($errors->has('name'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('name') }}</strong>
-                                        </span>
-                                    @endif
+                                        @if ($errors->has('name'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('name') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
                                 </div>
-                                <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
+                                <div class="row">
+                                    <div class="col form-group{{ $errors->has('date_naissance') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-date_naissance">{{ __('Date Naissance') }}</label>
+                                        <input type="date" name="date_naissance" id="input-date_naissance" class="form-control form-control-alternative{{ $errors->has('date_naissance') ? ' is-invalid' : '' }}" placeholder="{{ __('Date Naissance') }}" value="{{ old('name', auth()->user()->date_naissance) }}" required autofocus>
+
+                                        @if ($errors->has('date_naissance'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('date_naissance') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                    <div class="col form-group{{ $errors->has('ville') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-ville">{{ __('Ville') }}</label>
+                                        <select type="text" class="form-control" name="ville" id="input-ville" class="form-control form-control-alternative{{ $errors->has('ville') ? ' is-invalid' : '' }}" placeholder="{{ __('Ville') }}" value="{{ old('ville',auth()->user()->ville) }}"  autofocus>
+                                            <option selected=false disabled selected value>Selectionner une ville</option>
+                                            <option   value='Agadir'>Agadir</option>
+                                            <option   value='Asilah'>Asilah</option>
+                                            <option   value='Arfoud'>Arfoud</option>
+                                            <option   value='Beni Mellal'>Beni Mellal</option>
+                                            <option   value='Berkane'>Berkane</option>
+                                            <option   value='Berrechid'>Berrechid</option>
+                                            <option   value='Boujdour'>Boujdour</option>
+                                            <option   value='Casablanca'>Casablanca</option>
+                                            <option   value='Chefchaouen'>Chefchaouen</option>
+                                            <option   value='Dakhla'>Dakhla</option>
+                                            <option   value='El aioun'>El Aioun </option>
+                                            <option   value='El jadida'>El Jadida </option>
+                                            <option   value='Errachidia'>Errachidia </option>
+                                            <option   value='Essaouira'>Essaouira</option>
+                                            <option   value='Fes'>Fès</option>
+                                            <option   value='Fnideq'>Fnideq</option>
+                                            <option   value='Guelmim'>Guelmim</option>
+                                            <option   value='Guelmima'>Guelmima</option>
+                                            <option   value='Guercif'>Guercif</option>
+                                            <option   value='Ifrane'>Ifrane</option>
+                                            <option   value='Kenitra'>Kénitra</option>
+                                            <option   value='Khenifra'>Khénifra</option>
+                                            <option   value='Khouribga'>Khouribga</option>
+                                            <option   value='Ksar El Kebir'>Ksar el Kebir </option>
+                                            <option   value='Laayoune'>Laâyoune</option>
+                                            <option   value='Lagouira '>Lagouira </option>
+                                            <option   value='Larache'>Larache</option>
+                                            <option   value='Marrakech'>Marrakech</option>
+                                            <option   value='Martil'>Martil</option>
+                                            <option   value='Meknes'>Meknès</option>
+                                            <option   value='Mohammedia'>Mohammédia</option>
+                                            <option   value='Nador'>Nador</option>
+                                            <option   value='Ouarzazate'>Ouarzazate</option>
+                                            <option   value='Ouezzane'>Ouezzane</option>
+                                            <option   value='Oujda'>Oujda</option>
+                                            <option   value='Rabat'>Rabat</option>
+                                            <option   value='Oujda'>Oujda</option>
+                                            <option   value='Safi'>Safi</option>
+                                            <option   value='Sale'>Salé</option>
+                                            <option   value='Tanger'>Tanger</option>
+                                            <option   value='Tetouan'>Tétouan</option>
+                                            <option   value='autre'>Autre..</option>
+                                        </select>                                
+
+                                        @if ($errors->has('ville'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('ville') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col form-group{{ $errors->has('etablissement') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-etablissement">{{ __('Etablissement') }}</label>
+                                        <select type="text" class="form-control" name="etablissement" id="input-etablissement" class="form-control form-control-alternative{{ $errors->has('etablissmeent') ? ' is-invalid' : '' }}" placeholder="{{ __('Etablissement') }}" value="{{ old('etablissement', auth()->user()->etablissement) }}"  autofocus> 
+                                            <option selected=true disabled selected value>Selectionner une université</option>
+                                            <option   value='um6ss'>UNIVERSITÉ MOHAMMED VI DES SCIENCES DE LA SANTÉ</option>
+                                            <option   value='uiass'>UNIVERSITÉ INTERNATIONALE ABULCASIS DES SCIENCES DE LA SANTÉ</option>
+                                            <option   value='ueuromed'>UNIVERSITÉ EUROMED DE FÈS</option>
+                                            <option   value='medmetiers'>MED UNIVERSITÉ – L’UNIVERSITÉ DES MÉTIERS</option>
+                                            <option   value='mundiapolis'>UNIVERSITÉ MUNDIAPOLIS DE CASABLANCA</option>
+                                            <option   value='usms'>UNIVERSITÉ BÉNI MELLAL - SULTAN MOULAY SLIMANE</option>
+                                            <option   value='upf'>UNIVERSITÉ PRIVÉE DE FÈS</option>
+                                            <option   value='universiapolis'>UNIVERSIAPOLIS AGADIR</option>
+                                            <option   value='aui'>UNIVERSITÉ AL AKHAWAYN</option>
+                                            <option   value='ump'>UNIVERSITÉ OUJDA - MOHAMMED PREMIER</option>
+                                            <option   value='uae'>UNIVERSITÉ TANGER - ABDELMALEK ESSAÂDI</option>
+                                            <option   value='uit'>UNIVERSITÉ IBN TOFAÏL KÉNITRA</option>
+                                            <option   value='umi'>UNIVERSITÉ MOULAY ISMAÏL MEKNÈS</option>
+                                            <option   value='alqaraouiyine'>UNIVERSITÉ QUARAOUIYINE FÈS</option>
+                                            <option   value='ucd'>UNIVERSITÉ EL JADIDA - CHOUAÏB DOUKKALI</option>
+                                            <option   value='uh1'>UNIVERSITÉ SETTAT - HASSAN PREMIER</option>
+                                            <option   value='uh2m'>UNIVERSITÉ MOHAMMEDIA - HASSAN II</option>
+                                            <option   value='uh2c'>UNIVERSITÉ HASSAN II CASABLANCA</option>
+                                            <option   value='um5c'>UNIVERSITÉ RABAT - MOHAMMED V SOUISSI</option>
+                                            <option   value='um5a'>UNIVERSITÉ RABAT - MOHAMMED V AGDAL</option>
+                                            <option   value='usmba'>UNIVERSITÉ FÈS - SIDI MOHAMED BEN ABDELAH</option>
+                                            <option   value='uca'>UNIVERSITÉ MARRAKECH - CADI AYYAD</option>
+                                            <option   value='uiz'>UNIVERSITÉ IBN ZOHR AGADIR</option>
+                                            <option   value='autre'>AUTRE..</option>
+                                                
+                                        </select>                                 
+
+                                        @if ($errors->has('etablissement'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('etablissement') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                    <div class="col form-group{{ $errors->has('niveau') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-niveau">{{ __('Niveau') }}</label>
+                                        <select type="text" class="form-control" name="niveau" id="input-etablissement" class="form-control form-control-alternative{{ $errors->has('niveau') ? ' is-invalid' : '' }}" placeholder="{{ __('Niveau') }}" value="{{ old('niveau', auth()->user()->niveau) }}"  autofocus> 
+                                            <option selected=true disabled selected value>Selectionner votre niveau</option>
+                                            <option   value='bac'>BAC</option>
+                                            <option   value='bac+1'>BAC+1</option>
+                                            <option   value='bac+2'>BAC+2</option>
+                                            <option   value='bac+3'>BAC+3</option>
+                                            <option   value='bac+4'>BAC+4</option>
+                                            <option   value='bac+5'>BAC+5</option>
+                                            <option   value='doctorat'>DOCTORAT</option>
+                                            <option   value='autre'>AUTRE..</option>
+                                                
+                                        </select>                                 
+
+                                        @if ($errors->has('niveau'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('niveau') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="row">
+                                <div class="col form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-email">{{ __('Email') }}</label>
                                     <input type="email" name="email" id="input-email" class="form-control form-control-alternative{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" value="{{ old('email', auth()->user()->email) }}" required>
 
@@ -106,6 +235,17 @@
                                         </span>
                                     @endif
                                 </div>
+                                <div class="col form-group{{ $errors->has('tel') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-tel">{{ __('Email') }}</label>
+                                    <input type="tel" name="tel" id="input-tel" class="form-control form-control-alternative{{ $errors->has('tel') ? ' is-invalid' : '' }}" placeholder="{{ __('Tel') }}" value="{{ old('tel', auth()->user()->tel) }}" required>
+
+                                    @if ($errors->has('tel'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('tel') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
 
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>

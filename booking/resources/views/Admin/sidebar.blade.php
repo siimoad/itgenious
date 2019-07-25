@@ -26,18 +26,6 @@
                         <i class="ni ni-single-02"></i>
                         <span>My profile</span>
                     </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="ni ni-settings-gear-65"></i>
-                        <span>Settings</span>
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="ni ni-calendar-grid-58"></i>
-                        <span>Activity</span>
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="ni ni-support-16"></i>
-                        <span>Support</span>
-                    </a>
                     <div class="dropdown-divider"></div>
                     <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
@@ -83,6 +71,7 @@
                         <i class="ni ni-tv-2 text-primary"></i> Dashboard
                     </a>
                 </li>
+                <!--
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="fab fa-laravel" style="color: #f4645f;"></i>
@@ -98,13 +87,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('user.index')}}">
-                                    User Management 2
+                                    User Management
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-
+            -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="ni ni-planet text-blue"></i> Formations
@@ -112,17 +101,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="ni ni-pin-3 text-orange"></i> Maps
+                        <i class="ni ni-pin-3 text-orange"></i> Annonces
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-key-25 text-info"></i> Login
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-circle-08 text-pink"></i> Register
+                    <a class="nav-link" href="{{route('user.index')}}">
+                        <i class="ni ni-key-25 text-info"></i> Gestion des utilisateurs
                     </a>
                 </li>
                 
@@ -135,4 +119,5 @@
             
         </div>
     </div>
+</nav>
 </nav>

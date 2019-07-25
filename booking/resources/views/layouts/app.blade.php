@@ -28,13 +28,21 @@
 
     </head>
     <body class="{{ $class ?? '' }}">
-        @auth()
+        @auth
+        @if (Auth::user()->privilege == 0){        
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+            @include('Client.sidebar')
+        }
+        @elseif(Auth::user()->privilege == 1){
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
             @include('Admin.sidebar')
+        }
+        @endif
         @endauth
-        
         <div class="main-content">
             @include('layouts.navbars.navbar')
             @yield('content')
