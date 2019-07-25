@@ -23,6 +23,10 @@ Route::get('/formations', function () {
     return view('formations');
 })->name('formations');
 
+Route::get('/formation', function () {
+    return view('Admin.formation');
+})->name('formation');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

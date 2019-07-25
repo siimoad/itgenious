@@ -95,7 +95,7 @@
                 </li>
             -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{route('formation')}}">
                         <i class="ni ni-planet text-blue"></i> Formations
                     </a>
                 </li>
