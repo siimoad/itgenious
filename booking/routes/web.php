@@ -27,6 +27,10 @@ Route::get('/formation', function () {
     return view('Admin.formation');
 })->name('formation');
 
+Route::get('/ajouterFormation', function () {
+    return view('Admin.ajouterFormation');
+})->name('formation.ajout');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

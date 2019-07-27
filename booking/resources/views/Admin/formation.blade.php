@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('Client.header')   
+
+<div class="container-fluid mt--7">
+    <div class="row">
+        <div class="col-xl-12">
+                    <a href="{{route('formation.ajout')}}" class="mb-3 btn btn-secondary btn-lg  btn-block active" role="button" aria-pressed="true">Ajouter Formation</a>
 
 
-<div class="nav-wrapper">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Ajouter Formation</button>
-    </div>
     <div class="table-responsive">
-            <div>
+        <div>
             <table class="table align-items-center">
                 <thead class="thead-light">
                     <tr>
@@ -213,10 +216,12 @@
             </table>
         </div>
         
-        </div>
+    </div>
+            </div>
+
         
-        
-        
+            </div>
+</div>
         
 
     @endsection
