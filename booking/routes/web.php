@@ -23,13 +23,6 @@ Route::get('/formations', function () {
     return view('formations');
 })->name('formations');
 
-Route::get('/formation', function () {
-    return view('Admin.formation');
-})->name('formation');
-
-Route::get('/ajouterFormation', function () {
-    return view('Admin.ajouterFormation');
-})->name('formation.ajout');
 
 Auth::routes();
 
@@ -43,3 +36,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
+Route::get('/ajouterFormation', 'FormationsController@create');
+Route::get('/formation', 'FormationsController@index')->name('formation');
+Route::post('/ajouterFormation', 'FormationsController@store')->name('formation.add');

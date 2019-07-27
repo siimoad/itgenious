@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Formation;
 use Illuminate\Http\Request;
 
 class FormationsController extends Controller
@@ -14,7 +15,8 @@ class FormationsController extends Controller
      */
     public function index()
     {
-        //
+        $formations = Formation::all();
+        return view('Admin.formation', compact('formations'));
     }
 
     /**
@@ -24,7 +26,7 @@ class FormationsController extends Controller
      */
     public function create()
     {
-        //
+        return view('Admin.ajouterFormation');
     }
 
     /**
@@ -35,6 +37,21 @@ class FormationsController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'titre' => 'required',
+            'description' => 'required',
+            'theme' => 'required',
+            'formation_pdf' => 'required',
+            
+        ]);
+        $formation = new Formation();
+        $formation->titre = request('titre');
+        $formation->description = request('description');
+        $formation->theme = request('theme');
+
+        $formation->save();
+        return back()->withStatus(__('Formation successfully added.'));
+
         //
     }
 
@@ -46,7 +63,7 @@ class FormationsController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**

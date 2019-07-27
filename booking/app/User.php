@@ -15,10 +15,17 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = "users";
+    protected $primaryKey = "id";
     protected $fillable = [
         'name', 'email', 'password','date_naissance','sexe','ville','etablissement','niveau','tel'
     ];
 
+    public function formation_items(){
+
+     //   return $this->hasMany(Annonce::class, 'id', 'partenaire_id');
+
+    }
     /**
      * The attributes that should be hidden for arrays.
      *

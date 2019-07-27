@@ -14,9 +14,8 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="" autocomplete="off">
+                    <form method="post" action="{{route('formation.add')}}" autocomplete="off" enctype="multipart/form-data">
                             @csrf
-                            @method('put')
 
                             
                             @if (session('status'))

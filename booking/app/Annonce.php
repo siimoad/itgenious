@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Annonce extends Model
 {
+    protected $table = "annonces";
+    protected $primaryKey = "id";
     //
 }
