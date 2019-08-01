@@ -39,3 +39,6 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/ajouterFormation', 'FormationsController@create');
 Route::get('/formation', 'FormationsController@index')->name('formation');
 Route::post('/ajouterFormation', 'FormationsController@store')->name('formation.add');
+
+
+Route::get('/annonce', 'AnnoncesController@index')->name('annonce');

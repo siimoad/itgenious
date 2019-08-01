@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Annonce;
 use Illuminate\Http\Request;
 
 class AnnoncesController extends Controller
@@ -13,8 +13,9 @@ class AnnoncesController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $annonces = Annonce::all();
+        return view('Admin.annonce', compact('annonces'));
+        }
 
     /**
      * Show the form for creating a new resource.
