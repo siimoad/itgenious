@@ -19,6 +19,10 @@ Route::get('/details', function () {
     return view('Guest/details');
 })->name('details');
 
+Route::get('/contact', function () {
+    return view('Guest/contact');
+})->name('contact');
+
 Route::get('/formations', function () {
     return view('formations');
 })->name('formations');
