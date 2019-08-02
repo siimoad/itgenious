@@ -56,7 +56,7 @@
 					<a href="register.html">REGISTER</a>
 				</div>
 				<div>
-					<a class="btn btn-primary" href="#">nous contacter</a>
+					<a class="btn btn-primary" href="{{ route('contact') }}">contact us</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
