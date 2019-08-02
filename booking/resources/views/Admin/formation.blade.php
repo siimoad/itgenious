@@ -18,7 +18,7 @@
                         <th scope="col">Nombres De Places</th>
                         <th scope="col">Date Debut</th>
                         <th scope="col">Description</th>
-                        <th scope="col"> PDF</th>
+                        <th scope="col">PDF</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>

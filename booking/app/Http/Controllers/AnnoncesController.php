@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Annonce;
+use App\Formation;
 use Illuminate\Http\Request;
 
 class AnnoncesController extends Controller
@@ -24,7 +25,9 @@ class AnnoncesController extends Controller
      */
     public function create()
     {
-        //
+        $annonces = Annonce::all();
+        $formations = Formation::all();
+        return view('Admin.ajouterAnnonce')->with(compact('annonces'))->with(compact('formations'));
     }
 
     /**
@@ -35,7 +38,19 @@ class AnnoncesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'titre' => 'required',
+            'prix' => 'required',
+            'annonce_photo' => 'required',
+
+        ]);
+        $annonce = new Annonce();
+        $annonce->formation_id = request('titre');
+        $annonce->prix = request('prix');
+        $annonce->annonce_photo = request('annonce_photo');
+
+        $annonce->save();
+        return back()->withStatus(__('Annonce successfully added.'));
     }
 
     /**

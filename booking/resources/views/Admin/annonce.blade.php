@@ -6,7 +6,7 @@
 <div class="container-fluid mt--7">
     <div class="row">
         <div class="col-xl-12">
-                    <a href="#" class="mb-3 btn btn-secondary btn-lg  btn-block active" role="button" aria-pressed="true">Ajouter Annonce</a>
+                    <a href="{{route('annonce.add')}}" class="mb-3 btn btn-secondary btn-lg  btn-block active" role="button" aria-pressed="true">Ajouter Annonce</a>
 
 
     <div class="table-responsive">
@@ -15,9 +15,9 @@
                 <thead class="thead-light">
                     <tr>
                         <th scope="col">Formation</th>
+                        <th scope="col">Theme</th>
                         <th scope="col">Formation PDF</th>
                         <th scope="col">Prix</th>
-                        <th scope="col">Photo</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -30,6 +30,9 @@
                             </div>
                         </th>
                         <td class="font-weight-normal">
+                                <span class="mb-0 text-sm">{{$annonce->formation->theme}}</span>
+                        </td>
+                        <td class="font-weight-normal">
                                 <span class="mb-0 text-sm">{{$annonce->formation->formation_pdf}}</span>
                         </td>
 
@@ -39,7 +42,6 @@
                             </div>
         
                         </td>
-                        <td > {{$annonce->annonce_photo}}</td>
                         <td class="text-right">
                             <div class="dropdown">
                                 <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
