@@ -98,7 +98,7 @@
               </div>
     
     </div>
-    @include('guest.footer')
+    @include('Guest.footer')
 </div>
 
 <!--Section: Contact v.2-->

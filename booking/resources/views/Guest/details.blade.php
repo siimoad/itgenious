@@ -37,7 +37,7 @@
                     </div>
             
                 </div>
-                @include('guest.footer')
+                @include('Guest.footer')
         </div>
 
         
