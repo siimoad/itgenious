@@ -57,3 +57,4 @@ Route::post('/ajouterFormation', 'FormationsController@store')->name('formation.
 Route::get('/annonce', 'AnnoncesController@index')->name('annonce');
 Route::get('/ajouterAnnonce', 'AnnoncesController@create');
 Route::post('/ajouterAnnonce', 'AnnoncesController@store')->name('annonce.add');
+

@@ -41,7 +41,14 @@
                                     </div>
                                      <div class="col form-group{{ $errors->has('theme') ? ' has-danger' : '' }}">
                                         <label class="form-control-label" for="input-theme">{{ __('Theme') }}</label>
-                                        <input type="text" name="theme" id="input-theme" class="form-control form-control-alternative{{ $errors->has('theme') ? ' is-invalid' : '' }}" placeholder="{{ __('Theme') }}" value="{{ old('theme') }}" required autofocus>
+                                        <select type="text" class="form-control" name = "theme" id="theme" required=required class="form-control{{ $errors->has('theme') ? ' is-invalid' : '' }} value="{{ old('theme') }}" required autocomplete="theme" autofocus">
+                                            <option   value='microsoft'>Microsoft</option>
+                                            <option   value='office'>Office</option>
+                                            <option   value='adobe'>Adobe</option>
+                                            <option   value='comptia'>Comptia</option>
+                                            <option   value='pearson_vue'>Pearson Vue</option>
+                                        </select>                                        
+                                        
                                         @if ($errors->has('theme'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('theme') }}</strong>
@@ -64,12 +71,22 @@
                                 </div>
                                 <div class="row">
                                 <div class="col form-group{{ $errors->has('formation_pdf') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-formation_pdf">{{ __('PDF') }}</label>
+                                    <label class="form-control-label" for="input-formation_pdf">{{ __(' Formation PDF') }}</label>
                                     <input type="file" name="formation_pdf" id="input-formtation_pdf" class="form-control form-control-alternative{{ $errors->has('formation_pdf') ? ' is-invalid' : '' }}" placeholder="{{ __('Formation PDF') }}" value="{{ old('formation_pdf') }}" required>
 
                                     @if ($errors->has('formation_pdf'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('formation_pdf') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                                <div class="col form-group{{ $errors->has('brochure_pdf') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-brochure_pdf">{{ __('Brochure PDF') }}</label>
+                                    <input type="file" name="brochure_pdf" id="input-formtation_pdf" class="form-control form-control-alternative{{ $errors->has('brochure_pdf') ? ' is-invalid' : '' }}" placeholder="{{ __('Brochure PDF') }}" value="{{ old('brochure_pdf') }}" required>
+
+                                    @if ($errors->has('brochure_pdf'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('brochure_pdf') }}</strong>
                                         </span>
                                     @endif
                                 </div>

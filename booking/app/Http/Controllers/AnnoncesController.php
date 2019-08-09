@@ -17,6 +17,12 @@ class AnnoncesController extends Controller
         $annonces = Annonce::all();
         return view('Admin.annonce', compact('annonces'));
         }
+    public function indexHome()
+    {
+        $annonces = Annonce::with('formation')->get();;
+        return view('welcome')->with(compact('annonces', $annonces));
+    }
+        
 
     /**
      * Show the form for creating a new resource.
@@ -48,7 +54,16 @@ class AnnoncesController extends Controller
         $annonce->formation_id = request('titre');
         $annonce->prix = request('prix');
         $annonce->annonce_photo = request('annonce_photo');
+        if ($request->has('annonce_photo')) {
+            // Get image file
+            $annonce_photo = $request->file('annonce_photo');
+            $annonce_photo->store('annonce_photo');
+            $path_annonce_photo = $annonce_photo->getClientOriginalName();
 
+            $annonce_photo->storeAs('annonce_photo', $path_annonce_photo);
+            $annonce->annonce_photo = $path_annonce_photo;
+        }
+       
         $annonce->save();
         return back()->withStatus(__('Annonce successfully added.'));
     }

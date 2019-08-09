@@ -16,9 +16,11 @@ class CreateFormationsTable extends Migration
         Schema::create('formations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('titre');
-            $table->string('description');
+            $table->text('description');
             $table->string('theme');
             $table->string('formation_pdf')->default(0);
+            $table->string('brochure_pdf')->default(0);
+            $table->string('nombre_max')->default(20);
 
             $table->timestamps();
         });

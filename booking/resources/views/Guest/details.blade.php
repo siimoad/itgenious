@@ -22,9 +22,11 @@
                             <div class="row">
                                 <div class="col-md-4">
                                 <form class="cart clearfix" method="post">
-                                    <a href="#"><button type="button" name="addtocart" value="5" class="btn amado-btn" >Réservez votre place</button></a>
+                                    <a href="{{route ('register')}}" ><button type="button" name="addtocart" value="5" class="btn amado-btn" data-toggle="modal" data-target="#reserverModal" >Réservez votre place</button></a>
                                 </form>
                                 </div>
+
+                                
                                 <div class="col-md-4">
                                         <form class="cart clearfix" method="post">
                                                 <a href="#"><button type="button" name="addtocart" value="5" class="btn amado-btn" >Brochure</button></a>
@@ -37,6 +39,7 @@
                     </div>
             
                 </div>
+                
                 @include('Guest.footer')
         </div>
 
