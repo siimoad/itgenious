@@ -27,6 +27,15 @@ Route::get('/formations', function () {
     return view('formations');
 })->name('formations');
 
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
+
+Route::get('/cours', function () {
+    return view('Guest/cours');
+})->name('cours');
+
+
 
 Auth::routes();
 

@@ -53,7 +53,7 @@
 				</div>
 					
 				<div class="reg">
-					<a href="register.html">REGISTER</a>
+					<a href="{{ route('register') }}">REGISTER</a>
 				</div>
 				<div>
 					<a class="btn btn-primary" href="{{ route('contact') }}">contact us</a>
