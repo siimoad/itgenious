@@ -56,7 +56,7 @@
 					<a href="{{ route('register') }}">REGISTER</a>
 				</div>
 				<div>
-					<a class="btn btn-primary" href="{{ route('contact') }}">contact us</a>
+					<a class="btn btn-primary" href="{{ route('contact') }}">Contact Us</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
