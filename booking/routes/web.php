@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/details', function () {
-    return view('Guest/details');
-})->name('details');
+Route::get('/', 'AnnoncesController@indexHome')->name('index');
+
+Route::get('/details/{id}', 'AnnoncesController@show')->name('details');
 
 Route::get('/contact', function () {
     return view('Guest/contact');
@@ -30,16 +30,22 @@ Route::get('/formations', function () {
 Route::get('/register', function () {
     return view('register');
 })->name('register');
+Route::get('/reserver', function () {
+    return view('Guest.reserver');
+})->name('reserver');
 
-Route::get('/cours', function () {
-    return view('Guest/cours');
-})->name('cours');
 
+Route::get('/microsoft', 'AnnoncesController@microsoftHome')->name('microsoft');
+Route::get('/office', 'AnnoncesController@officeHome')->name('office');
+Route::get('/adobe', 'AnnoncesController@adobeHome')->name('adobe');
+Route::get('/comptia', 'AnnoncesController@comptiaHome')->name('comptia');
+Route::get('/pearsonvue', 'AnnoncesController@pearsonvueHome')->name('pearsonvue');
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'UserController', ['except' => ['show']]);

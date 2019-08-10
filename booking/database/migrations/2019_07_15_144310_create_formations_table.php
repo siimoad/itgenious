@@ -17,6 +17,7 @@ class CreateFormationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('titre');
             $table->text('description');
+            $table->text('infos');
             $table->string('theme');
             $table->string('formation_pdf')->default(0);
             $table->string('brochure_pdf')->default(0);

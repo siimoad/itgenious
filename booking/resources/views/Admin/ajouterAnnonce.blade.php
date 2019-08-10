@@ -66,6 +66,16 @@
                                         </span>
                                     @endif
                                 </div>
+                                <div class="col form-group{{ $errors->has('annonce_photo2') ? ' has-danger' : '' }}">
+                                    <label class="form-control-label" for="input-annonce_photo2">{{ __('Image d\'annonce 2') }}</label>
+                                    <input type="file" name="annonce_photo2" id="input-annonce_photo2" class="form-control form-control-alternative{{ $errors->has('annonce_photo2') ? ' is-invalid' : '' }}" placeholder="{{ __('Annonce Image 2') }}" value="{{ old('annonce_photo2') }}" required>
+                                
+                                    @if ($errors->has('annonce_photo2'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('annonce_photo2') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
                             </div>
 
                                 <div class="text-center">

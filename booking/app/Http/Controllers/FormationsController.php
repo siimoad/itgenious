@@ -48,6 +48,7 @@ class FormationsController extends Controller
         $formation = new Formation();
         $formation->titre = request('titre');
         $formation->description = request('description');
+        $formation->infos = request('infos');
         $formation->theme = request('theme');
         if ($request->has('formation_pdf') || $request->has('brochure_pdf') ) {
             // Get image file

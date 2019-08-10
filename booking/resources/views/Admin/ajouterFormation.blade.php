@@ -42,11 +42,13 @@
                                      <div class="col form-group{{ $errors->has('theme') ? ' has-danger' : '' }}">
                                         <label class="form-control-label" for="input-theme">{{ __('Theme') }}</label>
                                         <select type="text" class="form-control" name = "theme" id="theme" required=required class="form-control{{ $errors->has('theme') ? ' is-invalid' : '' }} value="{{ old('theme') }}" required autocomplete="theme" autofocus">
+                                            <option selected=true disabled selected value>Selectionner le theme de formation</option>
                                             <option   value='microsoft'>Microsoft</option>
                                             <option   value='office'>Office</option>
                                             <option   value='adobe'>Adobe</option>
                                             <option   value='comptia'>Comptia</option>
                                             <option   value='pearson_vue'>Pearson Vue</option>
+                                            <option   value='autre'>Autre</option>
                                         </select>                                        
                                         
                                         @if ($errors->has('theme'))
@@ -65,6 +67,16 @@
                                         @if ($errors->has('description'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('description') }}</strong>
+                                            </span>
+                                        @endif
+                                </div>
+                                    <div class="col form-group{{ $errors->has('infos') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-infos">{{ __('Informations') }}</label>
+                                        <textarea  name="infos" id="input-infos" class="form-control form-control-alternative{{ $errors->has('infos') ? ' is-invalid' : '' }}" placeholder="{{ __('Informations') }}" value="{{ old('infos') }}" rows="5" required autofocus></textarea>
+
+                                        @if ($errors->has('infos'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('infos') }}</strong>
                                             </span>
                                         @endif
                                 </div>

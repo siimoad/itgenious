@@ -2,7 +2,7 @@
 	<div class="header">
 		<div class="head-t">
 			<div class=" logo col-5" >
-			<a href="{{ route('welcome') }}"><img src="{{ asset('gretong') }}/images/itlogo.png" class="img-fluid" alt="..."/> </a>
+			<a href="{{ route('index') }}"><img src="{{ asset('gretong') }}/images/itlogo.png" class="img-fluid" alt="..."/> </a>
 			</div>
 			<!-- start header_right -->
 			<div class="header_right">
