@@ -53,10 +53,10 @@
 				</div>
 					
 				<div class="reg">
-					<a href="{{ route('register') }}">REGISTER</a>
+					<a class="text-muted" href="{{ route('register') }}">S'inscrire</a>
 				</div>
-				<div>
-					<a class="btn btn-primary" href="{{ route('contact') }}">Contact Us</a>
+				<div class="create_btn">
+					<a href="{{ route('contact') }}">Nous Contacter</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

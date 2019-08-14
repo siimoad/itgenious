@@ -31,6 +31,10 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
+Route::get('/details', function () {
+    return view('Admin/details');
+})->name('details');
+
 
 
 Route::get('/microsoft', 'AnnoncesController@microsoftHome')->name('microsoft');

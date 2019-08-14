@@ -29,13 +29,10 @@
 								@endforeach
 
 			</div>
-		</div>
+		</div>@include('Guest.footer')
 </div>
 </div>
 
-<footer >
-	@include('Guest.footer')
-</footer>
 
 @endsection
 
