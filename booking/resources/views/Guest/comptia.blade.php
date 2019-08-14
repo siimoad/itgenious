@@ -3,28 +3,45 @@
 @section('content')
 	@include('Guest.header')
 	
+
 	<div class="container">
-		<div class="arriv">
-			<div class="row">	
-				@foreach($annonces as $annonce)
-					<div class="col-md-6">
-						<img src="{{asset("storage/annonce_photo/$annonce->annonce_photo")}}" class="img-fluid" alt="img-responsive">
-						<div class=" arriv-info">
-							<div class=" crt-btn">
-								<a href="{{ route('details', ['id' => $annonce->id]) }}">AFFICHER</a>
-							</div>
-						</div>
-					</div>
-								@endforeach
-
+		<div class="row ">	
+			<div class="col-md-6">
+                <a href="{{ route('reserver') }}"><img src="{{ asset('gretong') }}/images/project.png" class="img-fluid" alt="img-responsive"></a>
+				
 			</div>
+			<div class="col-md-6">
+                <a href="#"><img src="{{ asset('gretong') }}/images/server.png" class="img-fluid" alt="img-responsive"></a>
+			
+			<div class="clearfix"> </div>
 		</div>
-</div>
+		<div class="row ">
+			<div class="col-md-6">
+                <a href="#"><img src="{{ asset('gretong') }}/images/security.png" class="img-fluid" alt="img-responsive"></a>
+				
+			</div>
+			<div class="col-md-6">
+                <a href="#"><img src="{{ asset('gretong') }}/images/cloud.png" class="img-fluid" alt="img-responsive"></a>
+				
+			<div class="clearfix"> </div>
+		</div>
+		
+			<div class="col-md-6">
+                <a href="#"><img src="{{ asset('gretong') }}/images/network.png" class="img-fluid" alt="img-responsive"></a>
+				
+			</div>
+			<div class="col-md-6 ">
+                <a href="#"><img src="{{ asset('gretong') }}/images/mobility.png" class="img-fluid" alt="img-responsive"></a>
+				
+			</div>
+			
+		</div>			
+	</div>
+	@include('Guest.footer')
+			<div class="clearfix"> </div></div>
 </div>
 
-<footer >
-	@include('Guest.footer')
-</footer>
+
 
 @endsection
 
