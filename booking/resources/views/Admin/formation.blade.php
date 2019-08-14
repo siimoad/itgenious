@@ -17,7 +17,6 @@
                         <th scope="col">Project</th>
                         <th scope="col">Nombres De Places</th>
                         <th scope="col">Date Debut</th>
-                        <th scope="col">Description</th>
                         <th scope="col">PDF</th>
                         <th scope="col"></th>
                     </tr>
@@ -38,12 +37,6 @@
                              30/10/2019
                             </span>
                         </td>
-                        <td class="w-25    p-2">
-                            <div>
-                                  {{$formation->description}}
-                            </div>
-        
-                        </td>
                         <td >{{$formation->formation_pdf}}</td>
                         <td class="text-right">
                             <div class="dropdown">
@@ -52,7 +45,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="#">Ajouter Etudiant</a>
-                                    <a class="dropdown-item" href="#">Modifier Formation</a>
+                                <a class="dropdown-item" href="{{route('formation.show', ['id' => $formation->id])}}">Modifier Formation</a>
                                 </div>
                             </div>
                         </td>

@@ -30,9 +30,7 @@ Route::get('/formations', function () {
 Route::get('/register', function () {
     return view('register');
 })->name('register');
-Route::get('/reserver', function () {
-    return view('Guest.reserver');
-})->name('reserver');
+
 
 
 Route::get('/microsoft', 'AnnoncesController@microsoftHome')->name('microsoft');
@@ -58,9 +56,15 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/ajouterFormation', 'FormationsController@create');
 Route::get('/formation', 'FormationsController@index')->name('formation');
 Route::post('/ajouterFormation', 'FormationsController@store')->name('formation.add');
+Route::get('/modifierFormation/{id}', 'FormationsController@show')->name('formation.show');
+Route::post('/modifierFormation/{id}', 'FormationsController@update')->name('formation.update');
 
 
 Route::get('/annonce', 'AnnoncesController@index')->name('annonce');
 Route::get('/ajouterAnnonce', 'AnnoncesController@create');
 Route::post('/ajouterAnnonce', 'AnnoncesController@store')->name('annonce.add');
 
+Route::get('/reserver/{id}', 'ReservationsController@show')->name('reserver.index');
+Route::get('/book', 'ReservationsController@book')->name('book');
+Route::post('/reserver/{id}', 'ReservationsController@store')->name('reserver');
+Route::post('/book', 'ReservationsController@storeGuest')->name('bookStore');

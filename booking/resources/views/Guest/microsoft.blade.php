@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row arriv-top">	
 			<div class="col-md-6 arriv-left">
-                <a href="{{ route('reserver') }}"><img src="{{ asset('gretong') }}/images/azure.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{route ('book')}}"><img src="{{ asset('gretong') }}/images/azure.png" class="img-fluid" alt="img-responsive"></a>
 				
 			</div>
 			<div class="col-md-6  arriv-right">

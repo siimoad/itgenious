@@ -9,7 +9,7 @@
             <div class="col-lg-10 col-md-10">
                 <div class="card bg-primary shadow border-0">
                     <div class="card-body px-lg-5 py-lg-5">
-                        <form role="form" method="POST" action="{{ route('reserver', ['id' => $annonce->id]) }}">
+                        <form role="form" method="POST" action="{{ route('bookStore') }}">
                             @csrf
                             <input type="hidden" value="{{csrf_token()}}" name="_token" id="token">
 
@@ -148,7 +148,6 @@
                             </div>
 
                             <div class="text-center">
-                            <input type="hidden" value="{{$annonce->id}}" name="annonce_id">
                                 <button type="submit" class="btn btn-primary mt-4">{{ __('Reserver') }}</button>
                             </div>
                         </form>
