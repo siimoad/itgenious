@@ -143,6 +143,10 @@ class FormationsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $annonce = Formation::where('id', '=', $id)->first();
+        $annonce->delete();
+        return back()->withStatus(__('Formation successfully deleted.'));
+
     }
+    
 }

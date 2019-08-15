@@ -58,6 +58,7 @@ Route::get('/formation', 'FormationsController@index')->name('formation');
 Route::post('/ajouterFormation', 'FormationsController@store')->name('formation.add');
 Route::get('/modifierFormation/{id}', 'FormationsController@show')->name('formation.show');
 Route::post('/modifierFormation/{id}', 'FormationsController@update')->name('formation.update');
+Route::get('/supprimerFormation/{id}', 'FormationsController@destroy')->name('formation.destroy');
 
 
 Route::get('/annonce', 'AnnoncesController@index')->name('annonce');

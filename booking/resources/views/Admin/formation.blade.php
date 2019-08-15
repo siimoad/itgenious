@@ -44,8 +44,8 @@
                                   <i class="fas fa-ellipsis-v"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#">Ajouter Etudiant</a>
-                                <a class="dropdown-item" href="{{route('formation.show', ['id' => $formation->id])}}">Modifier Formation</a>
+                                    <a class="dropdown-item" href="{{route('formation.show', ['id' => $formation->id])}}">Modifier Formation</a>
+                                    <a class="dropdown-item" href="{{route('formation.destroy', ['id' => $formation->id])}}">Supprimer Formation</a>
                                 </div>
                             </div>
                         </td>
