@@ -39,6 +39,10 @@ Route::get('/mesformations', function () {
     return view('Client/mesformations');
 })->name('mesformations');
 
+Route::get('/experience', function () {
+    return view('Guest/stage');
+})->name('stage');
+
 
 
 Route::get('/microsoft', 'AnnoncesController@microsoftHome')->name('microsoft');
