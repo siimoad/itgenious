@@ -631,7 +631,7 @@ input:focus {
 /* create_btn */
 .create_btn {
   float: left;
-  width: 21%;
+  width: 50%;
 }
 .create_btn a {
   text-transform: capitalize;

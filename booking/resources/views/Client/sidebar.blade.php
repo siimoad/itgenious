@@ -95,8 +95,8 @@
                 </li>
             -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-planet text-blue"></i> Icons
+                    <a class="nav-link" href="{{route('mesformations')}}">
+                        <i class="ni ni-planet text-blue"></i> Mes Formations
                     </a>
                 </li>
                 <li class="nav-item">
