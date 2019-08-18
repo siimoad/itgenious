@@ -31,9 +31,9 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
-Route::get('/details', function () {
-    return view('Admin/details');
-})->name('details');
+Route::get('/detail', function () {
+    return view('Admin/detail');
+})->name('detail');
 
 Route::get('/mesformations', function () {
     return view('Client/mesformations');
