@@ -109,6 +109,12 @@
                         <i class="ni ni-key-25 text-info"></i> Gestion des utilisateurs
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('paiement.index')}}">
+                        <i class="ni ni-key-25 text-info"></i> Etat de paiement
+                    </a>
+                </li>
+               
                 
             </ul>
             <!-- Divider -->

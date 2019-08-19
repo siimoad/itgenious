@@ -13,27 +13,27 @@
 				
 			</div>
 			<div class="col-md-6">
-                <a href="#"><img src="{{ asset('gretong') }}/images/exchange.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/exchange.png" class="img-fluid" alt="img-responsive"></a>
 			
 			<div class="clearfix"> </div>
 		</div>
 		<div class="row ">
 			<div class="col-md-6">
-                <a href="#"><img src="{{ asset('gretong') }}/images/sharepoint.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/sharepoint.png" class="img-fluid" alt="img-responsive"></a>
 				
 			</div>
 			<div class="col-md-6">
-                <a href="#"><img src="{{ asset('gretong') }}/images/sql.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/sql.png" class="img-fluid" alt="img-responsive"></a>
 				
 			<div class="clearfix"> </div>
 		</div>
 		
 			<div class="col-md-6">
-                <a href="#"><img src="{{ asset('gretong') }}/images/asp.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/asp.png" class="img-fluid" alt="img-responsive"></a>
 				
 			</div>
 			<div class="col-md-6 ">
-                <a href="#"><img src="{{ asset('gretong') }}/images/system-center.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/system-center.png" class="img-fluid" alt="img-responsive"></a>
 				
 			</div>
 			

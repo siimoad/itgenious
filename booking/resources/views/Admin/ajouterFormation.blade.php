@@ -106,6 +106,7 @@
 
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
+                                    <INPUT class="btn btn-success mt-4" TYPE="button" VALUE="Retour" onClick="history.back()">
                                 </div>
                             </div>
                         </form>

@@ -172,4 +172,10 @@ class ReservationsController extends Controller
     {
         //
     }
+    public function paiementIndex(){
+        $reservations = Reservation::with('user')->with('annonce')->get();
+
+        return view('Admin.paiement', compact('reservations'));
+    }
+
 }

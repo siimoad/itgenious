@@ -11,7 +11,7 @@
 				
 			</div>
 			<div class="col-md-6">
-                <a href="#"><img src="{{ asset('gretong') }}/images/office2.png" class="img-fluid" alt="img-responsive"></a>
+                <a href="{{ route('book') }}"><img src="{{ asset('gretong') }}/images/office2.png" class="img-fluid" alt="img-responsive"></a>
 			
 			<div class="clearfix"> </div>
 		</div>

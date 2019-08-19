@@ -26,7 +26,7 @@
                     <tr>
                         <th scope="row" class="name">
                             <div class="media align-items-center">
-                                <span class="mb-0 text-sm">{{$annonce->formation->titre}}</span>
+                            <span class="mb-0 text-sm"><a href="{{route('annonce.details',['id' => $annonce->id])}}">{{$annonce->formation->titre}}</a></span>
                             </div>
                         </th>
                         <td class="font-weight-normal">
@@ -48,8 +48,8 @@
                                   <i class="fas fa-ellipsis-v"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#">Ajouter Etudiant</a>
-                                    <a class="dropdown-item" href="#">Modifier Formation</a>
+                                    <a class="dropdown-item" href="{{route('annonce.showAnnonce', ['id' => $annonce->id])}}">Modifier Annonce</a>
+                                    <a class="dropdown-item" href="{{route('annonce.destroy', ['id' => $annonce->id])}}">Supprimer Annonce</a>
                                 </div>
                             </div>
                         </td>
@@ -66,6 +66,10 @@
                     
                 </tbody>
             </table>
+            <div class="text-center text-white">
+                    <INPUT class="btn btn-lg btn-primary" TYPE="button" VALUE="Retour" onClick="history.back()">
+                    
+                </div>
         </div>
         
     </div>

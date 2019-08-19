@@ -13,4 +13,8 @@ class Annonce extends Model
     {
         return $this->hasOne(Formation::class, 'id', 'formation_id');
     }
+    public function reservation()
+    {
+        return $this->belongsTo(Reservation::class, 'user_id', 'id');
+    }
 }

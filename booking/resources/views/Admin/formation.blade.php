@@ -26,7 +26,7 @@
                     <tr>
                         <th scope="row" class="name">
                             <div class="media align-items-center">
-                                <span class="mb-0 text-sm"><a href="{{ route('detail')}}"> {{$formation->titre}}</a></span>
+                                <span class="mb-0 text-sm"><a href="{{ route('formation', ['id' => $formation->id])}}"> {{$formation->titre}}</a></span>
                             </div>
                         </th>
                         <td class="font-weight-normal">
@@ -63,6 +63,10 @@
                 </tbody>
             </table>
         </div>
+        <div class="text-center text-white">
+                <INPUT class="btn btn-lg btn-primary" TYPE="button" VALUE="Retour" onClick="history.back()">
+                
+            </div>
         
     </div>
             </div>

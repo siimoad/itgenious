@@ -248,6 +248,8 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary mt-4">{{ __('Create account') }}</button>
+                                <INPUT class="btn btn-primary mt-4" TYPE="button" VALUE="Retour" onClick="history.back()">
+                
                             </div>
                         </form>
                     </div>
