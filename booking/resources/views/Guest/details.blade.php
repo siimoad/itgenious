@@ -17,21 +17,21 @@
                           
                                 <h4 class="text-success"> Inscription en cours</h4>
                              <div class="short_overview my-4">
-                             <h5>{!! nl2br($annonce->formation->description) !!}</h5>
+                             {!! nl2br($annonce->formation->description) !!}   
                              <br>
-                             <p> <span class="text-danger">Pour votre information : </span>
+                             <p> <span class="text-danger ">Pour votre information : </span>
                                 {!! nl2br($annonce->formation->infos) !!}
                                  </p>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <a href="{{route ('reserver.index', ['id' => $annonce->id])}}" ><button type="button" name="addtocart" value="5" class="btn amado-btn" >Réservez votre place</button></a>
+                                    <a href="{{route ('reserver.index', ['id' => $annonce->id])}}" ><button type="button"   class="btn btn-primary" >Réservez votre place</button></a>
                                 </div>
 
                                 
                                 <div class="col-md-4">
                                         <form class="cart clearfix" method="post">
-                                                <a href="#"><button type="button" name="addtocart" value="5" class="btn amado-btn" >Brochure</button></a>
+                                                <a href="#"><button type="button" class="btn btn-primary " >Brochure</button></a>
                                             </form>
                                 </div>
                             </div>
